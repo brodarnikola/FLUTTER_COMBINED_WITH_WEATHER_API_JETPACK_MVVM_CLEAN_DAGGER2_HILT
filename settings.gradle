@@ -1,0 +1,12 @@
+include ':data'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+  settingsDir,
+  '../../FLUTTER_PROJEKTI_ZA_UCENJE/flutter_module_new/.android/include_flutter.groovy'
+))
+include ':domain'
+include ':app'
+rootProject.name = "AndroidJetpackGithub"
+
+include ':flutter_module_new'
+project(':flutter_module_new').projectDir = new File('../../FLUTTER_PROJEKTI_ZA_UCENJE/flutter_module_new')
