@@ -16,7 +16,6 @@ import androidx.navigation.fragment.findNavController
 import com.vjezba.domain.model.Weather
 import com.vjezba.weatherapi.R
 import com.vjezba.weatherapi.databinding.FragmentWeatherBinding
-import com.vjezba.weatherapi.ui.activities.FlutterActivity
 import com.vjezba.weatherapi.viewmodels.WeatherViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_weather.*
@@ -114,8 +113,6 @@ class WeatherFragment : Fragment() {
         }
 
         binding.btnFlutterExample.setOnClickListener {
-            val intent = Intent(this.requireContext(), FlutterActivity::class.java)
-            startActivity(intent)
         }
     }
 
